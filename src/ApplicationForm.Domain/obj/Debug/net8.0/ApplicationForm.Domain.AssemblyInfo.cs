@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApplicationForm.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b63ef95bc75f4735e1bfa6f26d9f2f1e73d70693")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApplicationForm.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApplicationForm.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
