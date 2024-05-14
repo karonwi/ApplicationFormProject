@@ -1,0 +1,12 @@
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\bin\Debug\net8.0\ApplicationForm.Domain.deps.json
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\bin\Debug\net8.0\ApplicationForm.Domain.dll
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\bin\Debug\net8.0\ApplicationForm.Domain.pdb
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\obj\Debug\net8.0\ApplicationForm.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\obj\Debug\net8.0\ApplicationForm.Domain.AssemblyInfoInputs.cache
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\obj\Debug\net8.0\ApplicationForm.Domain.AssemblyInfo.cs
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\obj\Debug\net8.0\ApplicationForm.Domain.csproj.CoreCompileInputs.cache
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\obj\Debug\net8.0\ApplicationForm.Domain.sourcelink.json
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\obj\Debug\net8.0\ApplicationForm.Domain.dll
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\obj\Debug\net8.0\refint\ApplicationForm.Domain.dll
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\obj\Debug\net8.0\ApplicationForm.Domain.pdb
+C:\TrojBox\CapitalInvestmentAssessment\ApplicationFormProject\src\ApplicationForm.Domain\obj\Debug\net8.0\ref\ApplicationForm.Domain.dll

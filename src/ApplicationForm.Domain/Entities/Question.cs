@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApplicationForm.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,9 @@ namespace ApplicationForm.Domain.Entities
 {
     public class Question
     {
-        public Guid Id { get; set; }
-        public QuestionType Type { get; set; }
-        public string Content { get; set; }
+        public Guid id { get; set; }
+        public QuestionType type { get; set; }
+        public string? Content { get; set; }
         public bool IsRequired { get; set; }
 
         public int? MaxLength { get; set; } 
@@ -26,5 +27,7 @@ namespace ApplicationForm.Domain.Entities
         {
             Choices = new List<string>(); 
         }
+
+        public int GetPartitionKeyValue() => (int)type;
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KA+IDQdOtOunhb4FF3b991lI0NQ+EaxRv3XdULSQngtOIEUuGBkSxUcqZC1YionKBIM4tQavTODtQFkepxIAGQ==",
+  "dgSpecHash": "g6BDWvLCYxy6Ymk6k+5wXZMiKFbhONrLL+kztaWBIyVlg18CKYGYOjigtnU3McdfzW7ynjUkF48b59ATyKfC8A==",
   "success": true,
   "projectFilePath": "C:\\TrojBox\\CapitalInvestmentAssessment\\ApplicationFormProject\\src\\ApplicationForm.Application\\ApplicationForm.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\iyino\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512"
+  ],
   "logs": []
 }

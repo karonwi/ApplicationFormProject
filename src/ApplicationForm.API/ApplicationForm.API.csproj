@@ -7,11 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.39.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ApplicationForm.Application\ApplicationForm.Application.csproj" />
+    <ProjectReference Include="..\ApplicationForm.Domain\ApplicationForm.Domain.csproj" />
+    <ProjectReference Include="..\ApplicationForm.Infrastructure\ApplicationForm.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
