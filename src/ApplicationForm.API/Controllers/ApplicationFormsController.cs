@@ -23,16 +23,17 @@ namespace ApplicationForm.API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateApplicationForm([FromBody] ApplicationFormDto applicationFormDto)
         {
+            applicationFormDto.id = Guid.NewGuid();
             var applicationForm = _mapper.Map<ApplicationFormModel>(applicationFormDto);
             await _applicationFormService.CreateApplicationFormAsync(applicationForm);
             var resultDto = _mapper.Map<ApplicationFormDto>(applicationForm);
-            return CreatedAtAction(nameof(GetApplicationForm), new { id = applicationForm.Id }, resultDto);
+            return CreatedAtAction(nameof(GetApplicationForm), new { id = applicationForm.id }, resultDto);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateApplicationForm(Guid id, [FromBody] ApplicationFormDto applicationFormDto)
         {
-            if (id != applicationFormDto.Id)
+            if (id != applicationFormDto.id)
                 return BadRequest("ID mismatch in the URL and body.");
 
             var applicationForm = _mapper.Map<ApplicationFormModel>(applicationFormDto);
