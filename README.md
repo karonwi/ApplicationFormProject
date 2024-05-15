@@ -61,3 +61,45 @@ curl -X POST http://localhost:5000/api/applications -H 'Content-Type: applicatio
     ]
 }'
 ```
+
+#### Payload Structure
+{
+  "id": "00000000-0000-0000-0000-000000000007",
+  "personalInfo": {
+    "firstName": "Kay",
+    "lastName": "Sam",
+    "email": "kay.sam@example.com",
+    "phone": "1234567890",
+    "nationality": "Nigerian",
+    "currentResidence": "NGA",
+    "idNumber": "A123456789",
+    "dateOfBirth": "1997-01-01T00:00:00Z",
+    "gender": "Male"
+  },
+  "answers": [
+    {
+      "questionId": "00000000-0000-0000-0000-000000000001",
+      "answers": ["I am a software developer with 10 years of experience."]
+    },
+    {
+      "questionId": "00000000-0000-0000-0000-000000000002",
+      "answers": ["true"]
+    },
+    {
+      "questionId": "00000000-0000-0000-0000-000000000003",
+      "answers": ["Bachelor's Degree"]
+    },
+    {
+      "questionId": "00000000-0000-0000-0000-000000000004",
+      "answers": ["JavaScript", "Python", "C#"]
+    },
+    {
+      "questionId": "00000000-0000-0000-0000-000000000005",
+      "answers": ["1990-01-01T00:00:00Z"]
+    },
+    {
+      "questionId": "00000000-0000-0000-0000-000000000006",
+      "answers": ["10"]
+    }
+  ]
+}
