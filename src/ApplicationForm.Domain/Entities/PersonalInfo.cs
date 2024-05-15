@@ -8,7 +8,6 @@ namespace ApplicationForm.Domain.Entities
 {
     public class PersonalInfo
     {
-        //i may not be needing the id 
         public Guid Id { get; set; } 
         public string? FirstName { get; set; }
         public string? LastName { get; set; }

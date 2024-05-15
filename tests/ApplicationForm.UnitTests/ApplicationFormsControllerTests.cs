@@ -31,8 +31,8 @@ namespace ApplicationForm.UnitTests
         public async Task CreateApplicationForm_ShouldReturnCreatedAtAction()
         {
             // Arrange
-            var applicationFormDto = new ApplicationFormDto { Id = Guid.NewGuid() };
-            var applicationForm = new ApplicationFormModel { Id = applicationFormDto.Id };
+            var applicationFormDto = new ApplicationFormDto { id = Guid.NewGuid() };
+            var applicationForm = new ApplicationFormModel { id = applicationFormDto.id };
 
             _mockMapper.Setup(m => m.Map<ApplicationFormModel>(applicationFormDto)).Returns(applicationForm);
             _mockMapper.Setup(m => m.Map<ApplicationFormDto>(applicationForm)).Returns(applicationFormDto);
@@ -51,8 +51,8 @@ namespace ApplicationForm.UnitTests
         {
             // Arrange
             var applicationFormId = Guid.NewGuid();
-            var applicationForm = new ApplicationFormModel { Id = applicationFormId };
-            var applicationFormDto = new ApplicationFormDto { Id = applicationFormId };
+            var applicationForm = new ApplicationFormModel { id = applicationFormId };
+            var applicationFormDto = new ApplicationFormDto { id = applicationFormId };
 
             _mockService.Setup(s => s.GetApplicationFormByIdAsync(applicationFormId)).ReturnsAsync(applicationForm);
             _mockMapper.Setup(m => m.Map<ApplicationFormDto>(applicationForm)).Returns(applicationFormDto);
@@ -69,8 +69,8 @@ namespace ApplicationForm.UnitTests
         public async Task GetApplicationForms_ShouldReturnListOfApplicationFormDtos()
         {
             // Arrange
-            var applicationForms = new List<ApplicationFormModel> { new ApplicationFormModel { Id = Guid.NewGuid() } };
-            var applicationFormDtos = new List<ApplicationFormDto> { new ApplicationFormDto { Id = Guid.NewGuid() } };
+            var applicationForms = new List<ApplicationFormModel> { new ApplicationFormModel { id = Guid.NewGuid() } };
+            var applicationFormDtos = new List<ApplicationFormDto> { new ApplicationFormDto { id = Guid.NewGuid() } };
 
             _mockService.Setup(s => s.GetAllApplicationFormsAsync()).ReturnsAsync(applicationForms);
             _mockMapper.Setup(m => m.Map<IEnumerable<ApplicationFormDto>>(applicationForms)).Returns(applicationFormDtos);

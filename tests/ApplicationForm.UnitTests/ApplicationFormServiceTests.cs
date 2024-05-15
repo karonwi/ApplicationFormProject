@@ -26,7 +26,7 @@ namespace ApplicationForm.UnitTests
         public async Task CreateApplicationFormAsync_ShouldReturnCreatedApplicationForm()
         {
             // Arrange
-            var applicationForm = new ApplicationFormModel { Id = Guid.NewGuid() };
+            var applicationForm = new ApplicationFormModel { id = Guid.NewGuid() };
             _mockRepository.Setup(repo => repo.AddApplicationFormAsync(applicationForm))
                 .ReturnsAsync(applicationForm);
 
@@ -42,7 +42,7 @@ namespace ApplicationForm.UnitTests
         {
             // Arrange
             var applicationFormId = Guid.NewGuid();
-            var applicationForm = new ApplicationFormModel { Id = applicationFormId };
+            var applicationForm = new ApplicationFormModel { id = applicationFormId };
             _mockRepository.Setup(repo => repo.GetApplicationFormByIdAsync(applicationFormId))
                 .ReturnsAsync(applicationForm);
 
@@ -57,7 +57,7 @@ namespace ApplicationForm.UnitTests
         public async Task GetAllApplicationFormsAsync_ShouldReturnListOfApplicationForms()
         {
             // Arrange
-            var applicationForms = new List<ApplicationFormModel> { new ApplicationFormModel { Id = Guid.NewGuid() } };
+            var applicationForms = new List<ApplicationFormModel> { new ApplicationFormModel { id = Guid.NewGuid() } };
             _mockRepository.Setup(repo => repo.GetAllApplicationFormsAsync())
                 .ReturnsAsync(applicationForms);
 
