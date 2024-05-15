@@ -31,6 +31,10 @@ namespace ApplicationForm.Application.Services
         {
             await _questionRepository.DeleteQuestionAsync(id, type);
         }
+        public async Task<IEnumerable<Question>> GetQuestionsByType(int type)
+        {
+            return await _questionRepository.GetQuestionsByType(type);
+        }
 
         public async Task<Question> GetQuestionByIdAsync(Guid id)
         {

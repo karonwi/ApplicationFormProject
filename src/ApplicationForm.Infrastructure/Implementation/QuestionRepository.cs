@@ -102,7 +102,31 @@ namespace ApplicationForm.Infrastructure.Implementation
                 throw new Exception("Error retrieving the question by ID", ex);
             }
         }
+        public async Task<IEnumerable<Question>> GetQuestionsByType(int type)
+        {
+            try
+            {
+                var query = $"SELECT * FROM c WHERE c.type = '{type}'";
+                var queryDefinition = new QueryDefinition(query);
+                List<Question> results = new List<Question>();
 
+                using (var iterator = _container.GetItemQueryIterator<Question>(queryDefinition))
+                {
+                    while (iterator.HasMoreResults)
+                    {
+                        var response = await iterator.ReadNextAsync();
+                        results.AddRange(response.Resource);
+                    }
+                }
+
+            return results;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error retrieving the question by Type", ex);
+            }
+
+        }
         public async Task UpdateQuestionAsync(Question question)
         {
 

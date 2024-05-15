@@ -52,7 +52,7 @@ namespace ApplicationForm.API.Controllers
             return NoContent();
         }
 
-        [HttpGet]
+        [HttpGet("all")]
         public async Task<IActionResult> GetQuestions()
         {
             var questions = await _questionService.GetAllQuestionsAsync();
@@ -68,6 +68,21 @@ namespace ApplicationForm.API.Controllers
                 return NotFound();
             var questionDto = _mapper.Map<QuestionDto>(question);
             return Ok(questionDto);
+        }
+
+        [HttpGet("byType")]
+        public async Task<IActionResult> GetQuestions([FromQuery] int type)
+        {
+            try
+            {
+                var questions = await _questionService.GetQuestionsByType(type);
+                var questionDtos = _mapper.Map<IEnumerable<QuestionDto>>(questions);
+                return Ok(questionDtos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error: " + ex.Message);
+            }
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteQuestion(Guid id, QuestionType type)

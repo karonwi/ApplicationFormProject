@@ -13,6 +13,7 @@ namespace ApplicationForm.Domain.Interfaces
         Task CreateQuestionAsync(Question question);
         Task UpdateQuestionAsync(Question question);
         Task<Question> GetQuestionByIdAsync(Guid id);
+        Task<IEnumerable<Question>> GetQuestionsByType(int type);
         Task DeleteQuestionAsync(Guid id, QuestionType type);
         Task<IEnumerable<Question>> GetAllQuestionsAsync();
     }

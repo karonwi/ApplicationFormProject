@@ -62,6 +62,10 @@ curl -X POST http://localhost:5000/api/applications -H 'Content-Type: applicatio
 }'
 ```
 
+### Get Questions by Type
+
+**GET** `/api/questions/byType?type=0`
+
 #### Payload Structure
 {
   "id": "00000000-0000-0000-0000-000000000007",
